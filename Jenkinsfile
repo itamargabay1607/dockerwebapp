@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://github.com/itamargabay1607/dockerwebapp.git', 'dockerHub') {
+    docker.withRegistry('https://github.com/itamargabay1607/dockerwebapp.git', 'dockerhub') {
 
         def customImage = docker.build("docker-pipeline")
 
